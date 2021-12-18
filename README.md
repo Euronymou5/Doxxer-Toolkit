@@ -1,5 +1,5 @@
 # Doxxer-Toolkit
-Todo lo necesario que un doxxer debe de tener siempre a mano
+• Todo lo necesario que un doxxer debe de tener siempre a mano
 # Instalacion
 ```
 apt install git -y
@@ -25,6 +25,6 @@ python3 dox.py
 
 • Termux ✔
 # Version
-v1.0  sacare actualizaciones de esta herramienta
+• v1.0  sacare actualizaciones de esta herramienta
 # Contacto
-Negro100pesos#4439
+• Negro100pesos#4439
