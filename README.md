@@ -21,8 +21,9 @@ pip3 install -r requirements.txt
 python3 dox.py
 ```
 # Testeado en
-Kali Linux ✔
-Termux ✔
+• Kali Linux ✔
+
+• Termux ✔
 # Version
 v1.0  sacare actualizaciones de esta herramienta
 # Contacto
