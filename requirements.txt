@@ -1,2 +1,4 @@
 Faker
 phonenumbers>=8-12.17
+pillow
+qrcode
