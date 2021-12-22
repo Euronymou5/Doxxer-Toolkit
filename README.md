@@ -25,6 +25,6 @@ python3 dox.py
 
 • Termux ✔
 # Version
-• v1.0  sacare actualizaciones de esta herramienta
+• v1.2  sacare actualizaciones de esta herramienta
 # Contacto
 • Negro100pesos#4439
