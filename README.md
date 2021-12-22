@@ -16,7 +16,7 @@ git clone https://github.com/Euronymou5/Doxxer-Toolkit
 
 cd Doxxer-Toolkit
 
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt  o tambien se puede usar  pip install -r requirements.txt
 
 python3 dox.py
 ```
