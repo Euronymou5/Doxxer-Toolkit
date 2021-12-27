@@ -1,5 +1,7 @@
 # Doxxer-Toolkit
 • Todo lo necesario que un doxxer debe de tener siempre a mano
+
+• No me hago responsable del mal uso de esta herramienta es bajo su propia responsabilidad
 # Instalacion
 ```
 apt install git -y
