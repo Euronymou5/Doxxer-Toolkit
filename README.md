@@ -5,19 +5,26 @@
 # Instalacion
 ```
 apt install git -y
-
+```
+```
 apt install python3 -y
-
+```
+```
 apt install php -y
-
+```
+```
 cd $HOME
-
+```
+```
 git clone https://github.com/Euronymou5/Doxxer-Toolkit
-
+```
+```
 cd Doxxer-Toolkit
-
+```
+```
 pip install -r requirements.txt
-
+```
+```
 python3 dox.py
 ```
 # Testeado en
