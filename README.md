@@ -13,9 +13,6 @@ apt install python3 -y
 apt install php -y
 ```
 ```
-cd $HOME
-```
-```
 git clone https://github.com/Euronymou5/Doxxer-Toolkit
 ```
 ```
