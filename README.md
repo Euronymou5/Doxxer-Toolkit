@@ -30,5 +30,7 @@ python3 dox.py
 • Termux ✔
 # Version
 • v1.4  sacare actualizaciones de esta herramienta
+# Imagenes
+![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
 # Contacto
 • Negro100pesos#4439
