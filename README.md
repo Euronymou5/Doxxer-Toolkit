@@ -39,4 +39,4 @@ python3 dox.py
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
 # Contacto
-• Negro100pesos#4439
+• Discord: Negro100pesos#4439
