@@ -30,5 +30,7 @@ python3 dox.py
 • Termux ✔
 # Version
 • v1.2  sacare actualizaciones de esta herramienta
+
+• Proxima actualizacion v1.4: 31/12/2021
 # Contacto
 • Negro100pesos#4439
