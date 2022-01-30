@@ -29,11 +29,13 @@ python3 dox.py
 
 • Termux ✔
 # Version
-• v1.4  sacare actualizaciones de esta herramienta
+• v1.6  sacare actualizaciones de esta herramienta
 
 • Nuevas funciones:
 
-• Añadido acortadores de links + tinyurl API
+• Añadido mas acortadores de links
+
+• Solucionado Error al instalar los requerimientos en termux ✔
 
 • Actualizado Busqueda de usuario
 # Imagenes
