@@ -1,6 +1,6 @@
 Faker
 phonenumbers>=8-12.17
-pillow
+pypng
 requests
 pyshorteners
-qrcode
+pyqrcode
