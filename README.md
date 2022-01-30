@@ -37,7 +37,6 @@ python3 dox.py
 
 • Solucionado Error al instalar los requerimientos en termux ✔
 
-• Actualizado Busqueda de usuario
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
 # Contacto
