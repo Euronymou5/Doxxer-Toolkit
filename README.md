@@ -35,7 +35,7 @@ python3 dox.py
 
 • Añadido mas acortadores de links
 
-• Error solucionado a la hora de colocar usuario y contraseña de la pagina de Google de Phishing ✔
+• Error solucionado al momento de colocar usuario y contraseña de la pagina de Google de Phishing ✔
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
