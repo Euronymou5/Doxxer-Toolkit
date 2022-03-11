@@ -1,5 +1,4 @@
 Faker
-phonenumbers>=8-12.17
 pypng
 requests
 pyshorteners
