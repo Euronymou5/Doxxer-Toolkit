@@ -29,13 +29,15 @@ python3 dox.py
 
 • Termux ✔
 # Version
-• v1.6  sacare actualizaciones de esta herramienta
+• v1.8  sacare actualizaciones de esta herramienta
 
 • Nuevas funciones:
 
-• Añadido mas acortadores de links
+• Actualizado sacar informacion de un numero y removido el modulo de Phonenumbers
 
-• Error solucionado al momento de colocar usuario y contraseña de la pagina de Google de Phishing ✔
+• Arreglada la pagina de phishing de facebook
+
+• Añadido temp-mail.org a Correos electronicos falsos
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
