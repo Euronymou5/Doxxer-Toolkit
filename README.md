@@ -34,13 +34,7 @@ python3 dox.py
 # Version
 • v1.8  sacare actualizaciones de esta herramienta
 
-• Nuevas funciones:
-
-• Actualizado sacar informacion de un numero y removido el modulo de Phonenumbers
-
-• Arreglada la pagina de phishing de facebook
-
-• Añadido temp-mail.org a Correos electronicos falsos
+• Bug arreglado al sacar informacion de un numero de telefono
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
