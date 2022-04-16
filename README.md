@@ -34,7 +34,7 @@ python3 dox.py
 # Version
 • v1.8  sacare actualizaciones de esta herramienta
 
-• Bug arreglado al sacar informacion de un numero de telefono
+• Arreglado APIs agotadas ahora ya no se tendra que volver a clonar el repositorio cada vez que sean actualizadas solo sera cuestion de tiempo esperar a que las APIs del numero de telefono sean actualizadas para poder usarse 
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
