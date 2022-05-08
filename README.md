@@ -39,4 +39,4 @@ python3 dox.py
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
 # Contacto
-• Discord: Euronymou5#1234
+• Discord: Euronymou5#3155
