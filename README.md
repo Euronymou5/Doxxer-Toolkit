@@ -7,9 +7,6 @@
 apt install git -y
 ```
 ```bash
-apt install python3 -y
-```
-```bash
 git clone https://github.com/Euronymou5/Doxxer-Toolkit
 ```
 ```bash
@@ -18,9 +15,9 @@ cd Doxxer-Toolkit
 ```bash
 # Instalacion automatica
 
-Termux: python3 install.py
+Termux: bash install.sh
 
-Linux (Debian): sudo python3 install.py
+Linux (Debian): sudo bash install.sh
 ```
 ```bash
 # Comando para iniciar la herramienta:
