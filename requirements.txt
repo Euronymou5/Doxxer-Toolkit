@@ -3,3 +3,4 @@ pypng
 requests
 pyshorteners
 pyqrcode
+phonenumbers
