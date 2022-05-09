@@ -7,34 +7,38 @@
 apt install git -y
 ```
 ```
-apt install python -y
-```
-```
 apt install python3 -y
-```
-```
-apt install php -y
 ```
 ```
 git clone https://github.com/Euronymou5/Doxxer-Toolkit
 ```
-```
+```bash
 cd Doxxer-Toolkit
 ```
 ```
-pip install -r requirements.txt
+# Instalacion automatica
+
+Termux: python3 install.py
+
+Linux (Debian): sudo python3 install.py
 ```
 ```
+# Comando para iniciar la herramienta:
+
 python3 dox.py
 ```
 # Testeado en
-• Kali Linux ✔
+• Linux (Debian) ✔
 
 • Termux ✔
 # Version
-• v1.8  sacare actualizaciones de esta herramienta
+• v2.0 sacare actualizaciones de esta herramienta
 
-• Arreglado APIs agotadas ahora ya no se tendra que volver a clonar el repositorio cada vez que sean actualizadas solo sera cuestion de tiempo esperar a que las APIs del numero de telefono sean actualizadas para poder usarse 
+# Nuevas funciones
+
+• Añadido mas opciones al obtener informacion de un numero de telefono
+
+• Añadido textbelt a la categoria SMS
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
