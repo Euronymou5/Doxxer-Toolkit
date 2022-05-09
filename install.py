@@ -8,9 +8,6 @@ def install():
     # Instalar python
     print('\n[~] Instalando python...')
     os.system("apt install python -y")
-    # Instalar python3
-    print('\n[~] Instalando python3...')
-    os.system("apt install python3 -y")
     # Instalar php
     print('\n[~] Instalando php...')
     os.system("apt install php -y")
