@@ -38,6 +38,6 @@ python3 dox.py
 • Añadido textbelt a la categoria SMS
 
 # Imagenes
-![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/imagen.png?raw=true)
+![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/doxxer.png?raw=true)
 # Contacto
 • Discord: Euronymou5#3155
