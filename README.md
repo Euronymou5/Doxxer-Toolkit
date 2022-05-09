@@ -28,9 +28,9 @@ Linux (Debian): sudo python3 install.py
 python3 dox.py
 ```
 # Testeado en
-• Linux (Debian) ✔
+• Linux (Debian): ✔
 
-• Termux ✔
+• Termux: ✔
 # Version
 • v2.0 sacare actualizaciones de esta herramienta
 
