@@ -51,6 +51,8 @@ python3 dox_en.py
 
 **• Añadido socialscan a busqueda de usuario / Added socialscan to user search**
 
+**• Añadido paginas de phishing y iplogger en ingles y español / Added phishing and iplogger pages in English and Spanish**
+
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/doxxer.png?raw=true)
 # Contacto / Contact
