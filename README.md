@@ -41,15 +41,15 @@ python3 dox_en.py
 
 # Nuevas funciones
 
-• Añadido version en ingles! / Added English version!
+**• Añadido version en ingles! / Added English version!**
 
-• Añadido sherlock y nexfil a la categoria de busqueda de usuario / Added sherlock and nexfil to user search category
+**• Añadido sherlock y nexfil a la categoria de busqueda de usuario / Added sherlock and nexfil to user search category**
 
-• Añadido zphisher y 0ni-Phish a la categoria de phishing / Added zphisher and 0ni-Phish to the phishing category
+**• Añadido zphisher y 0ni-Phish a la categoria de phishing / Added zphisher and 0ni-Phish to the phishing category**
 
-• Añadido osint a un email (BETA) / Added osint to an email (BETA)
+**• Añadido osint a un email (BETA) / Added osint to an email (BETA)**
 
-• Añadido socialscan a busqueda de usuario / Added socialscan to user search
+**• Añadido socialscan a busqueda de usuario / Added socialscan to user search**
 
 # Imagenes
 ![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/doxxer.png?raw=true)
