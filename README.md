@@ -30,7 +30,7 @@ python3 dox.py
 Version en ingles / English version
 python3 dox_en.py
 ```
-# Testeado en
+# Testeado en / Tested in
 • Linux (Debian): ✔
 
 • Termux: ✔
