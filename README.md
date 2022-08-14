@@ -39,7 +39,7 @@ python3 dox_en.py
 # Version
 • v2.3 sacare actualizaciones de esta herramienta
 
-# Nuevas funciones
+# Nuevas funciones / New functions
 
 **• Añadido version en ingles! / Added English version!**
 
