@@ -8,10 +8,6 @@ function install() {
    pacman -S php
    echo -e "\nInstalando wget..."
    pacman -S wget
-   echo -e "\nInstalando pip3..."
-   wget https://bootstrap.pypa.io/get-pip.py
-   python3 get-pip.py
-   rm get-pip.py
    echo -e "\nInstalando requerimientos..."
    pip3 install -r requirements.txt
    echo -e "\n\033[32mInstalacion completa."
