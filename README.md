@@ -54,6 +54,6 @@ python3 dox_en.py
 **• Añadido paginas de phishing y iplogger en ingles y español / Added phishing and iplogger pages in English and Spanish**
 
 # Imagenes
-![image.png](https://github.com/Euronymou5/Doxxer-Toolkit/blob/main/.imagenes/doxxer.png?raw=true)
+<img src="https://media.discordapp.net/attachments/995599976463859713/1008188220678361088/doxxer_menu.png?width=590&height=431">
 # Contacto / Contact
 • Discord: Euronymou5#3155
