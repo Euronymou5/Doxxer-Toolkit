@@ -24,7 +24,7 @@ git clone https://github.com/Euronymou5/Doxxer-Toolkit
 cd Doxxer-Toolkit
 ```
 ```bash
-# Instalacion automatica / Automatic installation
+# Instalacion automatica
 
 Termux: bash install.sh
 
@@ -33,12 +33,12 @@ Linux (Debian): sudo bash install.sh
 Black Arch Linux: sudo bash install_arch.sh
 ```
 ```bash
-# Comando para iniciar la herramienta / Command to start the tool:
+# Comando para iniciar la herramienta:
 
-Version en español / Spanish version
+Version en español
 python3 dox.py
 
-Version en ingles / English version
+Version en ingles
 python3 dox_en.py
 ```
 # Testeado en
@@ -77,7 +77,7 @@ git clone https://github.com/Euronymou5/Doxxer-Toolkit
 cd Doxxer-Toolkit
 ```
 ```bash
-# Instalacion automatica / Automatic installation
+# Automatic installation
 
 Termux: bash install.sh
 
@@ -86,12 +86,12 @@ Linux (Debian): sudo bash install.sh
 Black Arch Linux: sudo bash install_arch.sh
 ```
 ```bash
-# Comando para iniciar la herramienta / Command to start the tool:
+# Command to start the tool:
 
-Version en español / Spanish version
+Spanish version
 python3 dox.py
 
-Version en ingles / English version
+English version
 python3 dox_en.py
 ```
 
