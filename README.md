@@ -3,6 +3,8 @@
 
 • No me hago responsable del mal uso de esta herramienta es bajo su propia responsabilidad
 
+**• (Gracias por el apoyo a la herramienta, lo que comenzo como un proyecto random ahora se convirtio en una proyecto muy grande, si me quieres apoyar por favor da le una estrella al repositorio!)**
+
 ## Repository review:
 - [Instalacion (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#instalacion)
 - [Sistemas operativos compatibles (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#testeado-en)
@@ -64,6 +66,8 @@ python3 dox_en.py
 • Everything necessary that a doxxer should always have at hand
 
 • I am not responsible for the misuse of this tool is at your own risk
+
+**• (Thank you for supporting the tool, what started as a random project has now become a very large project, if you want to support me please give the repository a star!)**
 
 # Installation
 
