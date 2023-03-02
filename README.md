@@ -3,7 +3,7 @@
 
 **• No me hago responsable del mal uso de esta herramienta es bajo su propia responsabilidad**
 
-**• (Gracias por el apoyo a la herramienta, lo que comenzo como un proyecto random ahora se convirtio en una proyecto muy grande, si me quieres apoyar por favor dale una estrella al repositorio!)**
+**• (Gracias por el apoyo a la herramienta, lo que comenzo como un proyecto random ahora se convirtio en un proyecto muy grande, si me quieres apoyar por favor dale una estrella al repositorio!)**
 
 ## Repository review:
 - [Instalacion (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#instalacion)
