@@ -3,6 +3,16 @@
 
 • No me hago responsable del mal uso de esta herramienta es bajo su propia responsabilidad
 
+## Repository review:
+- [Instalacion (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#instalacion)
+- [Sistemas operativos compatibles (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#testeado-en)
+- [Nuevas funciones (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#nuevas-funciones)
+- [English repo](https://github.com/Euronymou5/Doxxer-Toolkit#english-repo)
+- [Installation](https://github.com/Euronymou5/Doxxer-Toolkit#installation)
+- [Supported operating systems](https://github.com/Euronymou5/Doxxer-Toolkit#tested-in)
+- [New fuctions](https://github.com/Euronymou5/Doxxer-Toolkit#new-functions)
+- [Imagenes / Images](https://github.com/Euronymou5/Doxxer-Toolkit#imagenes--images)
+
 # Instalacion
 ```bash
 apt install git -y
