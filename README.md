@@ -37,21 +37,13 @@ python3 dox_en.py
 
 • Black Arch Linux: ✔
 # Version
-• v2.3 sacare actualizaciones de esta herramienta
+• v2.5
 
 # Nuevas funciones / New functions
 
-**• Añadido version en ingles! / Added English version!**
+**• Mejorado osint a email utilizando dorking y socialscan / Improved osint to email using dorking and socialscan**
 
-**• Añadido sherlock y nexfil a la categoria de busqueda de usuario / Added sherlock and nexfil to user search category**
-
-**• Añadido zphisher y 0ni-Phish a la categoria de phishing / Added zphisher and 0ni-Phish to the phishing category**
-
-**• Añadido osint a un email (BETA) / Added osint to an email (BETA)**
-
-**• Añadido socialscan a busqueda de usuario / Added socialscan to user search**
-
-**• Añadido paginas de phishing y iplogger en ingles y español / Added phishing and iplogger pages in English and Spanish**
+**• Mejorado busqueda de usuario de Doxxer-Toolkit / Improved Doxxer-Toolkit user search**
 
 # Imagenes
 <img src="https://media.discordapp.net/attachments/995599976463859713/1008188220678361088/doxxer_menu.png?width=590&height=431">
