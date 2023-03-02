@@ -15,7 +15,7 @@ from faker import Faker
 from time import sleep
 import webbrowser
 
-Version = "2.3"
+Version = "2.5"
 
 class Colores:
   red="\033[31;1m"
