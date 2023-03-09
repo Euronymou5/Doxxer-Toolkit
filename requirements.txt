@@ -5,3 +5,4 @@ pyshorteners
 pyqrcode
 phonenumbers
 socialscan
+google
