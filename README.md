@@ -34,14 +34,21 @@ Linux (Debian): sudo bash install.sh
 
 Black Arch Linux: sudo bash install_arch.sh
 ```
-```bash
-# Comando para iniciar la herramienta:
 
-Version en español
+## Comando para iniciar la herramienta:
+
+`Version en español`
+
+```
 python3 dox.py
+```
 
-Version en ingles
+`Version en ingles`
+
+```
 python3 dox_en.py
+```
+
 ```
 # Testeado en
 • Linux (Debian): ✔
@@ -49,8 +56,9 @@ python3 dox_en.py
 • Termux: ✔
 
 • Black Arch Linux: ✔
+
 # Version
-• v2.5
+• v2.6
 
 # Nuevas funciones
 
@@ -89,14 +97,21 @@ Linux (Debian): sudo bash install.sh
 
 Black Arch Linux: sudo bash install_arch.sh
 ```
-```bash
-# Command to start the tool:
 
-Spanish version
+## Command to start the tool:
+
+`Spanish version`
+
+```
 python3 dox.py
+```
 
-English version
+`English version`
+
+```
 python3 dox_en.py
+```
+
 ```
 
 # Tested in
@@ -107,7 +122,7 @@ python3 dox_en.py
 • Black Arch Linux: ✔
 
 # Version
-• v2.5
+• v2.6
 
 # New functions
 
