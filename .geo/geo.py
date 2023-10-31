@@ -1,8 +1,141 @@
-import base64, codecs
-magic = 'IyEvdXNyL2Jpbi9weXRob24NCiMgLSotIGNvZGluZzogdXRmLTggLSotDQppbXBvcnQgcmVxdWVzdHMsIGpzb24NCmltcG9ydCBvcw0KaW1wb3J0IHRpbWUNCmZyb20gcGxhdGZvcm0gaW1wb3J0IHN5c3RlbQ0KDQpjbGFzcyBjb2xvcmVzOg0KICAgIHJlZD0iXDAzM1szMTsxbSINCg0KDQpvcy5zeXN0ZW0oImNsZWFyIikNCmxvZ28gPSBjb2xvcmVzLnJlZCArICcnJw0KICAgICAgICAgICAgIHV1JDokOiQ6JDokOiR1dQ0KICAgICAgICAgIHV1JCQkJCQkJCQkJCQkJCQkJCR1dQ0KICAgICAgICAgdSQkJCQkJCQkJCQkJCQkJCQkJCQkJHUNCiAgICAgICAgIHUkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJHUNCiAgICAgICB1JCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJHUNCiAgICAgICB1JCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJHUNCiAgICAgICB1JCQkJCQkKiAgICokJCQqICAgKiQkJCQkJHUNCiAgICAgICAqJCQkJCogICAgICB1JHUgICAgICAgJCQkJCoNCiAgICAgICAgJCQkdSAgICAgICB1JHUgICAgICAgdSQkJA0KICAgICAgICAkJCR1ICAgICAgdSQkJHUgICAgICB1JCQkDQogICAgICAgICAqJCQkJHV1JCQkICAgJCQkdXUkJCQkKg0KICAgICAgICAgICokJCQkJCQkKiAgICokJCQkJCQkKg0KICAgICAgICAgICAgdSQkJCQkJCR1JCQkJCQkJHUNCiAgICAgICAgICAgICB1JCokKiQqJCokKiQqJHUNCiAgdXV1ICAgICAgICAkJHUkICQgJCAkICR1JCQgICAgICAgdXV1DQogdSQkJCQgICAgICAgICQkdSR1JHUkdSR1JCQgICAgICAgdSQkJCQNCiAgJCQkJCR1dSAgICAgICokJCQkJCQkJCQqICAgICB1dSQkJCQkJA0KdSQkJCQkJCQkJCQkICAgICAgKioqKiogICAgdXV1dSQkJCQkJCQkJA0KJCQkJCoqKiQkJCQkJCQkJCR1dXUgICB1dSQkJCQkJCQkJCoqKiQkJCoNCiAqKiogICAgICAqKiQkJCQkJCQkJCQkdXUgKiokKioqDQogICAgICAgICAgdXV1dSAqKiQkJCQkJCQkJCR1dXUNCiB1JCQkdXV1JCQkJCQkJCQkdXUgKiokJCQkJCQkJCQkJHV1dSQkJA0KICQkJCQkJCQkJCQqKioqICAgICAgICAgICAqKiQkJCQkJCQkJCQkKg0KICAgKiQkJCQkKiAgICAgICAgICAgICAgICAgICAgICAqKiQkJCQqKg0KICAgICAkJCQqICAgIF9fX19fX19fX19fX19fX19fX18gICQkJCQqDQogICAgICAgICAgICB8TWFkZSBieTogRXVyb255bW91NXwNCiAgICAgICAgICAgIHxfX19fX19fX19fX19fX19fX19ffA0KICAgICAgICAgICAgfCBTcHlyb2QgVmVyc2lvbjogdjN8DQogICAgICAgICAgICB8X19fX19fX19fX19fX19fX19fX3wNCiAgICAgDQogI'
-love = 'PNtVPpaWlNtQDbAPaElrGbAPvNtpUWcoaDboT9aolxAPvNtpUWcoaDbW1g+KFOSp2AlnJWyVTkuVRyDVTEyVTkuVUMcL3EcoJRaXD0XVPOcpPN9VTyhpUI0XPqosy0tFIN6VPpcQDbtVUOlnJ50XTLaJ35qVRW1p2AuozEiVTEuqT9mVTEyBvO7nKO9WlxAPvNtqTygMF5moTIypPtlXD0XVPOupTxtCFOzVzu0qUN6Yl9cpP1upTxhL29gY2cmo24ir2yjsG9znJIfMUZ9p3EuqUImYT1yp3AuM2HfL29hqTyhMJ50YTAioaEcozIhqRAiMTHfL291oaElrFkwo3IhqUW5D29xMFklMJqco24fpzIanJ9hGzSgMFkwnKE5YTEcp3ElnJA0YUccpPkfLKDfoT9hYUEcoJI6o25yYT9zMaAyqPkwqKWlMJ5wrFkcp3Nfo3WaYTSmYTSmozSgMFklMKMypaAyYT1iLzyfMFkjpz94rFkbo3A0nJ5aYUS1MKW5Wzkuozp9MKZvQDbAPvNtMTS0LFN9VUWypKIyp3EmYzqyqPuupTxcYzcmo24bXD0XVPNwVl0gYF0gYF0gYF0gHKIypaxgYF0gYF0gYF0wVj0XVPOjpzyhqPtvKT5osy0tJ0yDVREyVTkuVUMcL3EcoJSqBvVfVTEuqTSoW3S1MKW5W10cQDbtVPZwYF0gYF0gYF0gYF0gYF1WH1NgYF0gYF0gYF0gYD0XVPOjpzyhqPtvJ35qVSgWH1OqVQbvYPOxLKEuJlqcp3NaKFxAPvNtnJLtMTS0LIfanKAjW10tCG0tEzSfp2H6QDbtVPNtpUWcoaDbW1g+KFOoFIADVT5iVTIhL29hqUWuMT8uKFpcQDbtVPZwYF0gYF0gYF0gYF0gG3WaYF0gYF0gYF0gYF0wVj0XVPOjpzyhqPtvJ35qVSgCpzquozy6LJAco25qBvVfVTEuqTSoW29lMlqqXD0XVPOcMvOxLKEuJlqipzpaKFN9CFOTLJkmMGbAPvNtVPOjpzyhqPtaJ35qVSgCpzquozy6LJAco24toz8tMJ5wo250pzSxolSqWlxAPvNtVlZgYF0gYF0gYF0gYHAcqUxgYF0gYF0gYF0wVj0XVPOjpzyhqPtvJ35qVSgQnKIxLJEqBvVfVTEuqTSoW2AcqUxaKFxAPvNtnJLtMTS0LIfaL2y0rFqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ0AcqJEuMPOholOyozAioaElLJEuVI0aXD0XVPNwVl0gYF0gYF0gYF0gD291oaElrF0gYF0gYF0gYFZwQDbtVUOlnJ50XPWosy0tJ05ioJWlMFOxMJjtpTUQeKAqBvVfVTEuqTSoW2AiqJ50paxaKFxAPvNtnJLtMTS0LIfaL291oaElrFqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ05ioJWlMFOxMJjtpTScplOholOyozAioaElLJEiVI0aXD0XVPNwVl0gYF0gYF0gYF1FMJqco24gYF0gYF0gVlZAPvNtpUWcoaDbVyg+KFOoHzIanJ9hKGbvYPOxLKEuJlqlMJqco24aKFxAPvNtnJLtMTS0LIfapzIanJ9hW10tCG0tEzSfp2H6QDbtVPNtpUWcoaDbW1g+KFOoHzIanJ9hVT5iVTIhL29hqUWuMTRuKFpcQD'
-god = 'ogICMjLS0tLS0tLS0tTm9tYnJlIGRlbCBjb250aW5lbnRlLS0tDQogIHByaW50KCJbfl0gW05vbWJyZSBkZWwgY29udGluZW50ZV06IiwgZGF0YVsnY29udGluZW50J10pDQogIGlmIGRhdGFbJ2NvdW50cnknXSA9PSBGYWxzZToNCiAgICBwcmludCgnW35dIFtOb21icmUgZGVsIGNvbnRpbmVudGUgbm8gZW5jb250cmFkbyFdJykNCiAgIy0tLS0tLS0tLS0tUmVnacOzbiAvIGVzdGFkby0tLS0tLS0jIw0KICBwcmludCgiW35dIFtSZWdpw7NuIC8gZXN0YWRvXToiLCBkYXRhWydyZWdpb25OYW1lJ10pDQogIGlmIGRhdGFbJ3JlZ2lvbk5hbWUnXSA9PSBGYWxzZToNCiAgICBwcmludCgnW35dIFtSZWdpb24gLyBFc3RhZG8gbm8gZW5jb250cmFkbyFdJykNCiAgIyMtLS0tLS0tLS0tMiBsZXRyYXMgY29udGluZW50ZSMjLS0tDQogIHByaW50KCJbfl0gW0PDs2RpZ28gZGUgY29udGluZW50ZSBkZSBkb3MgbGV0cmFzXToiLCBkYXRhWydjb250aW5lbnRDb2RlJ10pDQogIGlmIGRhdGFbJ2NvdW50cnknXSA9PSBGYWxzZToNCiAgICBwcmludCgnW35dIFtDw7NkaWdvIGRlIGNvbnRpbmVudGUgZGUgZG9zIGxldHJhcyBubyBlbmNvbnRyYWRvIV0nKQ0KICAjLS0tTGF0aXR1ZC0tLS0jIw0KICBwcmludCgiW35dIFtMYXRpdHVkXToiLCBkYXRhWydsYXQnXSkNCiAgaWYgZGF0YVsnbGF0J10gPT0gRmFsc2U6DQogICAgcHJpbnQoJ1t+XSBbTGF0aXR1ZCBubyBlbmNvbnRyYWRhIV0nKQ0KICAjIy0tLS0tLS0tLS1Mb25naXR1ZC0tLS0tLSMjDQogIHByaW50KCJbfl0gW0xvbmdpdHVkXToiLCBkYXRhWydsb24nXSkNCiAgaWYgZGF0YVsnbG9uJ10gPT0gRmFsc2U6DQogICAgcHJpbnQoJ1t+XSBbTG9uZ2l0dWQgbm8gZW5jb250cmFkYSFdJykNCiAgIyMtLS0tLS0tLS0tLS0tLVRpbWV6b25lLS0tLS0tLS0tIyMNCiAgcHJpbnQoIlt+XSBbWm9uYSBob3JhcmlhXToiLCBkYXRhWyd0aW1lem9uZSddKQ0KICBpZiBkYXRhWyd0aW1lem9uZSddID09IEZhbHNlOg0KICAgIHByaW50KCdbfl0gW1pvbmEgaG9yYXJpYSBubyBlbmNvbnRyYWRhIV0nKQ0KICAjIy0tLS0tLS0tLS0tLS0tIFpJUC0tLS0tLS0tLS0tLS0tIyMNCiAgcHJpbnQoIlt+XSBbQ29kaWdvIHppcF06IiwgZGF0YVsnemlwJ10pDQogIGlmIGRhdGFbJ3ppcCddID09IEZhbHNlOg0KICAgIHByaW50KCdbfl0gW0NvZGlnbyB6aXAgbm8gZW5jb250cmFkbyFdJykNCiAgIyMtLS0tLS0tLS0tLS0gQVMgLS0tLS0tLS0tLS0tLS0tLS0tLSMjDQogIHByaW50KCJbfl0gW0FTIG7Dum1lcm8geSBvcmdhbml'
-destiny = '6LJAcj7AhKGbvYPOxLKEuJlquplqqXD0XVPOcMvOxLKEuJlquplqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ0SGVT7Qhz1ypz8trFOipzquozy6LJAcj7AhVT5iVTIhL29hqUWuMT8uKFpcQDbtVPZwYF0gYF0gYF0gYF1Qo3IhqUW5L29xMF0gYF0gVlZAPvNtpUWcoaDbVyg+KFOoD8BmMTyaolOxMFOjLpBgplOxMFOxo3ZtoTI0pzSmKGbvYPOxLKEuJlqwo3IhqUW5D29xMFqqXD0XVPOcMvOxLKEuJlqwo3IhqUW5D29xMFqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ0CQf2EcM28tMTHtpTUQeKZtMTHtMT9mVTkyqUWuplOholOyozAioaElLJEiVI0aXD0XVPNwVl0gYF0gYF0gYF0gHzI2MKWmMFOWHP0gYF0gYF0gYFZwQDbtVUOlnJ50XPWosy0tJ0EBHlOcoaMypaAiVTEyVTkuVRyDKGbtVvjtMTS0LIfapzI2MKWmMFqqXD0XVPOcMvOxLKEuJlqlMKMypaAyW10tCG0tEzSfp2H6QDbtVPNtpUWcoaDbW1g+KFOoER5GVTyhqzIlp28tMTHtoTRtFINuKFpcQDbtVPZwYF0gYF0gYF0gYF0gYF1Ao2WcoTHgYF0gYF0wVj0XVPOjpzyhqPtvJ35qVSgQo25yrTaQf24topBmqzyfVPuwMJk1oTSlXI06VvjtMTS0LIfaoJ9vnJkyW10cQDbtVTyzVTEuqTSoW21iLzyfMFqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ0AiozI4npBmovOgj7A2nJjtoz8tMJ5wo250pzSxolSqWlxAPvNtVl0gYF1wqKWlMJ5wrF0gYF0wVj0XVPOjpzyhqPtaJ35qVSgAo25yMTRtozSwnJ9hLJkqBvpfVTEuqTSoW2A1paWyozA5W10cQDbtVTyzVTEuqTSoW2A1paWyozA5W10tCG0tEzSfp2H6QDbtVPNtpUWcoaDbW1g+KFOoGJ9hMJEuVT5uL2yiozSfVT5iVTIhL29hqUWuMTRuKFpcQDbtVPZgYF0gYJEcp3ElnJA0YF0gYFZAPvNtpUWcoaDbW1g+KFOoETymqUWcqT8tXUA1LzEcqzymnpBmovOxMFOfLFOwnKIxLJDcKGbaYPOxLKEuJlqxnKA0pzywqPqqXD0XVPOcMvOxLKEuJlqxnKA0pzywqPqqVQ09VRMuoUAyBt0XVPNtVUOlnJ50XPqosy0tJ0Ecp3ElnKEiVT5iVTIhL29hqUWuMT8uKFpcQDbtVPZgYF0gYF0gHUWirUxgYF0gYFZAPvNtpUWcoaDbW1g+KFOoHUWirUxfVSMDGvOiVSEipy06WljtMTS0LIfapUWirUxaKFxAPvNtnJLtMTS0LIfapUWirUxaKFN9CFOTLJkmMGbAPvNtVPOjpzyhqPtaJ35qVSgDpz94rFjtIyOBVT8tIT9lVT5iVTIhL29hqUWuMT8uKFpcQDbAPzI4L2IjqPOYMKyvo2SlMRyhqTIlpaIjqQbAPvNtVPNtVPNtpUWcoaDbW1khH2SfnJIhMT8tMTIfVUOlo2qlLJ1uYv4hWlxAPvNtVPNtVPNtqTygMF5moTIypPtkXD0XVPNtVPNtVPOyrTy0XPx='
-joy = '\x72\x6f\x74\x31\x33'
-trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
-eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# Codigo de: https://github.com/Euronymou5/Spyrod-v2
+# Licencia:  MPL-2.0 license
+
+import requests, json
+import os
+import time
+from platform import system
+
+class colores:
+    red="\033[31;1m"
+
+
+os.system("clear")
+logo = colores.red + '''
+             uu$:$:$:$:$:$uu
+          uu$$$$$$$$$$$$$$$$$uu
+         u$$$$$$$$$$$$$$$$$$$$$u
+         u$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$*   *$$$*   *$$$$$$u
+       *$$$$*      u$u       $$$$*
+        $$$u       u$u       u$$$
+        $$$u      u$$$u      u$$$
+         *$$$$uu$$$   $$$uu$$$$*
+          *$$$$$$$*   *$$$$$$$*
+            u$$$$$$$u$$$$$$$u
+             u$*$*$*$*$*$*$u
+  uuu        $$u$ $ $ $ $u$$       uuu
+ u$$$$        $$u$u$u$u$u$$       u$$$$
+  $$$$$uu      *$$$$$$$$$*     uu$$$$$$
+u$$$$$$$$$$$      *****    uuuu$$$$$$$$$
+$$$$***$$$$$$$$$$uuu   uu$$$$$$$$$***$$$*
+ ***      **$$$$$$$$$$$uu **$***
+          uuuu **$$$$$$$$$$uuu
+ u$$$uuu$$$$$$$$$uu **$$$$$$$$$$$uuu$$$
+ $$$$$$$$$$****           **$$$$$$$$$$$*
+   *$$$$$*                      **$$$$**
+     $$$*    ___________________  $$$$*
+            |Made by: Euronymou5|
+            |___________________|
+            | Spyrod Version: v3|
+            |___________________|
+     
+     '''  
+
+try:
+  print(logo)
+  print('[~] Escribe la IP de la victima')
+  ip = input('[~] IP: ')
+  print(f'[~] Buscando datos de: {ip}')
+  time.sleep(2)
+  api = f"http://ip-api.com/json/{ip}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query&lang=es"
+
+  data = requests.get(api).json()
+  ##-----------Query---------##
+  print("\n[~] [IP De la victima]:", data['query'])
+  ##--------------ISP-----------
+  print("[~] [ISP] :", data['isp'])
+  if data['isp'] == False:
+    print('[~] [ISP no encontrado!]')
+  ##------------Org-----------##
+  print("[~] [Organizacion]:", data['org'])
+  if data['org'] == False:
+    print('[~] [Organizacion no encontrado!]')
+  ##-----------City---------##
+  print("[~] [Ciudad]:", data['city'])
+  if data['city'] == False:
+    print('[~] [Ciudad no encontrada!]')
+  ##-----------Country---------##
+  print("[~] [Nombre del país]:", data['country'])
+  if data['country'] == False:
+    print('[~] [Nombre del pais no encontrado!]')
+  ##----------Region-------##
+  print("[~] [Region]:", data['region'])
+  if data['region'] == False:
+    print('[~] [Region no encontrada!]')
+  ##---------Nombre del continente---
+  print("[~] [Nombre del continente]:", data['continent'])
+  if data['country'] == False:
+    print('[~] [Nombre del continente no encontrado!]')
+  #-----------Región / estado-------##
+  print("[~] [Región / estado]:", data['regionName'])
+  if data['regionName'] == False:
+    print('[~] [Region / Estado no encontrado!]')
+  ##----------2 letras continente##---
+  print("[~] [Código de continente de dos letras]:", data['continentCode'])
+  if data['country'] == False:
+    print('[~] [Código de continente de dos letras no encontrado!]')
+  #---Latitud----##
+  print("[~] [Latitud]:", data['lat'])
+  if data['lat'] == False:
+    print('[~] [Latitud no encontrada!]')
+  ##----------Longitud------##
+  print("[~] [Longitud]:", data['lon'])
+  if data['lon'] == False:
+    print('[~] [Longitud no encontrada!]')
+  ##--------------Timezone---------##
+  print("[~] [Zona horaria]:", data['timezone'])
+  if data['timezone'] == False:
+    print('[~] [Zona horaria no encontrada!]')
+  ##-------------- ZIP--------------##
+  print("[~] [Codigo zip]:", data['zip'])
+  if data['zip'] == False:
+    print('[~] [Codigo zip no encontrado!]')
+  ##------------ AS -------------------##
+  print("[~] [AS número y organización]:", data['as'])
+  if data['as'] == False:
+    print('[~] [AS número y organización no encontrado!]')
+  ##-----------Countrycode-----##
+  print("[~] [Código de país de dos letras]:", data['countryCode'])
+  if data['countryCode'] == False:
+    print('[~] [Código de país de dos letras no encontrado!]')
+  ##-----------Reverse IP---------##
+  print("[~] [DNS inverso de la IP]: ", data['reverse'])
+  if data['reverse'] == False:
+    print('[~] [DNS inverso de la IP!]')
+  ##--------------Mobile------##
+  print("[~] [Conexión móvil (celular)]:", data['mobile'])
+  if data['mobile'] == False:
+    print('[~] [Conexión móvil no encontrado!]')
+  #----currency----##
+  print('[~] [Moneda nacional]:', data['currency'])
+  if data['currency'] == False:
+    print('[~] [Moneda nacional no encontrada!]')
+  #-----district----#
+  print('[~] [Distrito (subdivisión de la ciudad)]:', data['district'])
+  if data['district'] == False:
+    print('[~] [Distrito no encontrado!]')
+  #-------Proxy-----#
+  print('[~] [Proxy, VPN o Tor]:', data['proxy'])
+  if data['proxy'] == False:
+    print('[~] [Proxy, VPN o Tor no encontrado!]')
+
+except KeyboardInterrupt:
+        print('\nSaliendo del programa...')
+        time.sleep(1)
+        exit()
