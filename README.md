@@ -71,6 +71,8 @@ python3 dox_en.py
 
 **• Añadido pagina awesome osint a paginas de osint.**
 
+**• Se han arreglado algunos bugs y errores.**
+
 -----------------------
 
 ## English repo:
@@ -138,6 +140,8 @@ python3 dox_en.py
 **• Removed sending anonymous sms because it no longer worked.**
 
 **• Added awesome osint page to osint pages.**
+
+**• Some bugs and errors have been fixed.**
 
 ----------------------------
 
