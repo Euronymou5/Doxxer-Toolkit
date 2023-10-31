@@ -111,8 +111,6 @@ python3 dox.py
 python3 dox_en.py
 ```
 
-```
-
 # Tested in
 • Linux (Debian): ✔
 
