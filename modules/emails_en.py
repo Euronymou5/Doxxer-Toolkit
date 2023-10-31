@@ -16,7 +16,7 @@ class Colores:
 def main():
     email = input(f'\n{Colores.azul}[~] Enter the email: ')
     if email == "" or email == " ":
-        print(f'\n{Color.red}[!] Error you must enter an email.')
+        print(f'\n{Colores.red}[!] Error you must enter an email.')
         time.sleep(2)
         main()
     else:

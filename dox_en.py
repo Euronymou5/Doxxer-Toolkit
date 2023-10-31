@@ -12,10 +12,10 @@ import requests
 import pyqrcode
 import png
 from faker import Faker
-from time import sleep
 import webbrowser
+from modules import numeros_en, phoneinf_en
 
-Version = "2.5"
+Version = "2.6"
 
 class Colores:
   red="\033[31;1m"
@@ -30,15 +30,18 @@ os.system("clear")
 logo = Colores.red + '''
 ·▄▄▄▄        ▐▄• ▄ ▐▄• ▄ ▄▄▄ .▄▄▄      ▄▄▄▄▄            ▄▄▌  ▄ •▄ ▪  ▄▄▄▄▄
 ██▪ ██ ▪      █▌█▌▪ █▌█▌▪▀▄.▀·▀▄ █·    •██  ▪     ▪     ██•  █▌▄▌▪██ •██  
-▐█· ▐█▌ ▄█▀▄  ·██·  ·██· ▐▀▀▪▄▐▀▀▄      ▐█.▪ ▄█▀▄  ▄█▀▄ ██▪  ▐▀▀▄·▐█· ▐█.▪
-██. ██ ▐█▌.▐▌▪▐█·█▌▪▐█·█▌▐█▄▄▌▐█•█▌     ▐█▌·▐█▌.▐▌▐█▌.▐▌▐█▌▐▌▐█.█▌▐█▌ ▐█▌·
-▀▀▀▀▀•  ▀█▄▀▪•▀▀ ▀▀•▀▀ ▀▀ ▀▀▀ .▀  ▀     ▀▀▀  ▀█▄▀▪ ▀█▄▀▪.▀▀▀ ·▀  ▀▀▀▀ ▀▀▀ 
+▐█· ▐█▌ ▄█▀▄  ·██·  ·██· ▐▀▀▪▄▐▀▀▄      ▐█.▪ ▄█▀▄  ▄█▀▄ ██▪  ▐▀▀▄·▐█· ▐█.▪           
+██. ██ ▐█▌.▐▌▪▐█·█▌▪▐█·█▌▐█▄▄▌▐█•█▌     ▐█▌·▐█▌.▐▌▐█▌.▐▌▐█▌▐▌▐█.█▌▐█▌ ▐█▌·                                   
+▀▀▀▀▀•  ▀█▄▀▪•▀▀ ▀▀•▀▀ ▀▀ ▀▀▀ .▀  ▀     ▀▀▀  ▀█▄▀▪ ▀█▄▀▪.▀▀▀ ·▀  ▀▀▀▀ ▀▀▀                                 
                    
-                    By:  Euronymou5
-                    _______________
-
-                     Version: v2.5
-                     _____________
+                    By:  Euronymou5  \033[33m           /\\
+                  \033[31m  _______________  \033[33m         __)_)__
+                                     \033[33m      .-'._'-'_.'-.
+                 \033[31m    Version: v2.6   \033[33m    .'.' /o\'/o\ '.'.
+                  \033[31m   _____________   \033[33m   / :/._:  A  :_.\: \\  Happy Hallowen!
+                                     \033[33m  | :   \'=.:.='/   : | 
+                                     \033[33m  \ :  :'.___.':  : /
+                                     \033[33m   '-:__:__:__:__:-'
 '''
 
 
@@ -159,13 +162,7 @@ def iplog():
       time.sleep(2)
       iplog()
   elif opc == 3:
-    print(f'\n{Colores.verde}[~] IP will be saved in: Doxxer-Toolkit/.pages/en_pages/IPlogger/ip.txt')
-    print(f'\n{Colores.amarillo}[~] You can view the IP ADDRESSES with the command: cat Doxxer-Toolkit/.pages/en_pages/IPlogger/ip.txt')
-    print(f'\n{Colores.magenta}[~] To exit press CTRL + C')
-    print(' ')
-    cmd = "php -t .pages/en_pages/IPlogger -S localhost:8080 & ssh -R 80:localhost:8080 nokey@localhost.run"
-    p = subprocess.Popen(cmd, shell=True)
-    a = p.communicate()[0]
+    os.system("python3 modules/iplogger_en.py")
   elif opc == 00:
     os.system("clear")
     menu()
@@ -280,6 +277,8 @@ def emailfak():
   print('\n[1] Emkei')
   print('\n[2] Anonemail (Anonymouse)')
   print('\n[3] Temp-Mail')
+  print('\n[4] Etemp-Mail')
+  print('\n[5] TempMail.email')
   print('\n[00] Back to main menu')
   print('\n[99] Exit')
   OP = int(input('>> '))
@@ -355,6 +354,48 @@ def emailfak():
        print('[~] Invalid option.')
        time.sleep(2)
        emailfak()
+  # Etemp-Mail
+  elif OP == 4:
+    os.system("clear")
+    print(logo)
+    print('\n[1] Open link for linux')
+    print('\n[2] Open link for termux')
+    print('\n[00] Return to main menu')
+    print('\n[99] Exit')
+    bruh = int(input('>> '))
+    if bruh == 1:
+      webbrowser.open('https://etempmail.com')
+      emailfak()
+    elif bruh == 2:
+      os.system("termux-open https://etempmail.com")
+      emailfak()
+    elif bruh == 00:
+      os.system("clear")
+      print(logo)
+      emailfak()
+    elif bruh == 99:
+      exit()
+  # TempMail-email
+  elif OP == 5:
+    os.system("clear")
+    print(logo)
+    print('\n[1] Open link for linux')
+    print('\n[2] Open link for termux')
+    print('\n[00] Return to main menu')
+    print('\n[99] Exit')
+    bruh = int(input('>> '))
+    if bruh == 1:
+      webbrowser.open('https://tempmail.email')
+      emailfak()
+    elif bruh == 2:
+      os.system("termux-open https://tempmail.email")
+      emailfak()
+    elif bruh == 00:
+      os.system("clear")
+      print(logo)
+      emailfak()
+    elif bruh == 99:
+      exit()
   elif OP == 00:
     menu()
   elif OP == 99:
@@ -372,6 +413,7 @@ def phishing():
   print('[1] Using Doxxer Toolkit phishing')
   print('[2] Zphisher (Program)')
   print('[3] 0ni-Phish (Program) (Spanish only)')
+  print('[4] MaxPhisher (Program)')
   print('[00] Back to main menu')
   print('[99] Exit')
   var = int(input('\n>> '))
@@ -518,26 +560,35 @@ def phishing():
            print('\n[~] Back to main menu')
            time.sleep(1)
            phishing()
+  # MaxPhisher
+  elif var == 4:
+     if os.path.exists('.tools/MaxPhisher'):
+        os.system(f"cd .tools/MaxPhisher && python3 maxphisher.py")
+     else:
+       print('\n[!] MaxPhisher is not installed!')
+       var = input('[?] You want to install MaxPhisher [Y/n]: ')
+       if var == "Y" or var == "y":
+          print('\n[~] Installing MaxPhisher...')
+          os.system("cd .tools && git clone https://github.com/KasRoudra/MaxPhisher && pip3 install -r MaxPhisher/files/requirements.txt")
+          print(Colores.verde + '\n[~] MaxPhisher installed.')
+          time.sleep(2)
+          phishing()
+       elif var == "N" or var == "n":
+           print('\n[~] Returning to the main menu')
+           time.sleep(1)
+           phishing()
+  ##  return
   elif var == 00:
      menu()
   elif var == 99:
     exit()
   
 def sms():
-  print('\n[1] Send Anonymoussms (Page)')
-  print('\n[2] Send an anonymous sms using TextBelt')
+  print('\n[1] Send an anonymous sms using TextBelt')
   print('\n[00] Back to main menu')
   print('\n[99] Exit')
   YR = int(input('>> '))
-  if YR == 1:
-     print('\n[1] Open link for linux')
-     print('\n[2] Open link for termux')
-     var = int(input('>> '))
-     if var == 1:
-        webbrowser.open('http://www.sendanonymoussms.com/')
-     elif var == 2:
-        os.system("termux-open http://www.sendanonymoussms.com/")
-  elif YR ==  2:
+  if YR ==  1:
       print('[~] Example: +14322009740')
       print(f'\n{Colores.azul}[!] Remember that you can only send 1 message per day')
       numero = input(f'{Colores.red}[~] Enter the phone number: ')
@@ -562,6 +613,7 @@ def numero():
     print('\n[1] RevealName (Page)')
     print('[2] Get information using Numverify (API)')
     print('[3] Get information using the Phonenumbers module')
+    print('[4] Phoneinfoga (Tool)')
     print('[00] Back to main menu')
     print('[99] Exit')
     var = int(input('\n>> '))
@@ -571,94 +623,12 @@ def numero():
        var2 = int(input('>> '))
        if var2 == 1:
           webbrowser.open('https://www.revealname.com/')
-          #numero()
+          numero()
        elif var2 == 2:
            os.system("termux-open https://www.revealname.com/")
-           #numero()
+           numero()
     elif var == 2:
-       print('[~] Example: +19087654321')
-       keys = "https://github.com/Euronymou5/LineX/raw/main/keys.json"
-       data_keys = requests.get(keys).json()
-       numero = input('[~] Enter the phone number: ')
-       payload = {}
-       apikey11 = {
-         "apikey": data_keys['key'],
-       }
-       apikey22 = { 
-         "apikey2": data_keys['key1'],
-       }
-       apikey33 = {
-         "apikey3": data_keys['key2'],
-       }
-       apikey44 = {
-         "apikey4": data_keys['key3'],
-       }
-       apikey55 = {
-         "apikey5": data_keys['key4']
-       }
-       api = f"https://api.apilayer.com/number_verification/validate?number={numero}"
-       try: 
-         data = requests.request("GET", api, headers=apikey11, data = payload).json()
-         if data['valid'] == False:
-           print('\n[!] The phone number is not valid!')
-         else:
-           print('\n[~] Phone number: ', data['number'])
-           print('[~] Country code: ', data['country_code'])
-           print('[~] Country Name: ', data['country_name'])
-           print('[~] Location: ', data['location'])
-           print('[~] Carrier: ', data['carrier'])
-       except KeyError:
-           try:
-             api1 = f"https://api.apilayer.com/number_verification/validate?number={numero}"
-             data1 = requests.request("GET", api1, headers=apikey22, data = payload).json()
-             if data1['valid'] == False:
-               print('\n[!] The phone number is not valid!')
-             else:
-               print('\n[~] Phone number: ', data1['number'])
-               print('[~] Country code: ', data1['country_code'])
-               print('[~] Country name: ', data1['country_name'])
-               print('[~] Location: ', data1['location'])
-               print('[~] Carrier: ', data1['carrier'])
-           except KeyError:
-              try:
-                api3 = f"https://api.apilayer.com/number_verification/validate?number={numero}"
-                data3 = requests.request("GET", api3, headers=apikey33, data = payload).json()
-                if data3['valid'] == False:
-                  print('\n[!] The phone number is not valid!')
-                else:
-                 print('\n[~] Phone number: ', data3['number'])
-                 print('[~] Country code: ', data3['country_code'])
-                 print('[~] Country name: ', data3['country_name'])
-                 print('[~] Location: ', data3['location'])
-                 print('[~] Carrier: ', data3['carrier'])
-              except KeyError:
-                 try:
-                   api4 = f"https://api.apilayer.com/number_verification/validate?number={numero}"
-                   data4 = requests.request("GET", api4, headers=apikey44, data = payload).json()
-                   if data4['valid'] == False:
-                      print('\n[!] The phone number is not valid!')
-                   else:
-                    print('\n[~] Phone number: ', data4['number'])
-                    print('[~] Country code: ', data4['country_code'])
-                    print('[~] Country name: ', data4['country_name'])
-                    print('[~] Location: ', data4['location'])
-                    print('[~] Carrier: ', data4['carrier'])
-                 except KeyError:
-                   try:
-                     api5 = f"https://api.apilayer.com/number_verification/validate?number={numero}"
-                     data5 = requests.request("GET", api5, headers=apikey55, data = payload).json()
-                     if data5['valid'] == False:
-                        print('\n[!] The phone number is not valid!')
-                     else:
-                        print('\n[~] Phone number: ', data5['number'])
-                        print('[~] Country code: ', data5['country_code'])
-                        print('[~] Country name: ', data5['country_name'])
-                        print('[~] Location: ', data5['location'])
-                        print('[~] Carrier: ', data5['carrier'])
-                   except KeyError:
-                      print('\n[!] Exhausted API you must wait for them to be updated')
-                      sleep(2)
-                      menu()
+        numeros_en.inicio()
     elif var == 3:
        print('\n[~] Example: +19087654321')
        phone_number = str(input('[~] Enter the phone number: '))
@@ -679,7 +649,6 @@ def numero():
            for time in timezone.time_zones_for_number(phone):
                     print(f'[~] Time zone: {time}')
                     print('\n[~] Full scan.')
-      
        except ImportError:
             print(f'\n{Colores.azul}[!] Phonenumbers module not found!')
             print('[~] Use the pip3 install phonenumbers command')
@@ -687,6 +656,8 @@ def numero():
             print(f'{Colores.red}[~] Returning to the main menu...')
             time.sleep(1)
             numero()
+    elif var == 4:
+        phoneinf_en.install()
     elif var == 00:
       menu()
     elif var == 99:
@@ -697,13 +668,15 @@ def osintpa():
   os.system("clear")
   print(logo)
   print('''\n
-  [1] osintframework
+  [1] Osintframework
   
-  [2] osint techniques
+  [2] Osint Techniques
+
+  [3] Awesome Osint
   
-  [00] Regresar al menu principal
+  [00] Return to main menu
   
-  [99] Salir
+  [99] Exit
   ''')
   osint = int(input('>> '))
   if osint == 1:
@@ -738,6 +711,21 @@ def osintpa():
       osintpa()
     elif elejir99 == 2:
       os.system("termux-open https://www.osinttechniques.com/")
+    elif elejir99 == 00:
+      osintpa()
+    elif elejir99 == 99:
+      exit()
+  elif osint == 3:
+    print('\n[1] Open link for linux')
+    print('\n[2] Open link for termux')
+    print('\n[00] Back to main menu')
+    print('\n[99] Exit')
+    elejir99 = int(input('>>: '))
+    if elejir99 == 1:
+      webbrowser.open('https://github.com/jivoi/awesome-osint')
+      osintpa()
+    elif elejir99 == 2:
+      os.system("termux-open https://github.com/jivoi/awesome-osint")
     elif elejir99 == 00:
       osintpa()
     elif elejir99 == 99:
@@ -906,8 +894,7 @@ def cortarlink():
 def menu():
     os.system("clear")
     print(logo)
-    print('''\n
-    
+    print(Colores.red + '''
     [~] Welcome to Doxxer Toolkit!
                       
     [1] IPloggers      
@@ -958,4 +945,5 @@ def menu():
       menu()
     
 
-menu()
+if __name__ == "__main__":
+    menu()
