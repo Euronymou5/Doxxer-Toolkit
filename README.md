@@ -25,15 +25,15 @@ git clone https://github.com/Euronymou5/Doxxer-Toolkit
 ```bash
 cd Doxxer-Toolkit
 ```
-```bash
-# Instalacion automatica
 
-Termux: bash install.sh
+## Instalacion automatica
 
-Linux (Debian): sudo bash install.sh
+> Termux: `bash install.sh`
 
-Black Arch Linux: sudo bash install_arch.sh
-```
+> Linux (Debian): `sudo bash install.sh`
+
+> Black Arch Linux: `sudo bash install_arch.sh`
+
 
 ## Comando para iniciar la herramienta:
 
@@ -95,15 +95,14 @@ git clone https://github.com/Euronymou5/Doxxer-Toolkit
 ```bash
 cd Doxxer-Toolkit
 ```
-```bash
-# Automatic installation
 
-Termux: bash install.sh
+## Automatic installation
 
-Linux (Debian): sudo bash install.sh
+> Termux: `bash install.sh`
 
-Black Arch Linux: sudo bash install_arch.sh
-```
+> Linux (Debian): `sudo bash install.sh`
+
+> Black Arch Linux: `sudo bash install_arch.sh`
 
 ## Command to start the tool:
 
