@@ -59,7 +59,7 @@ python3 dox_en.py
 # Version
 • v2.6
 
-# Nuevas funciones
+# Actualizacion
 
 **• Se ha agregado una actualizacion al IPlogger integrado para la generación de URLs en localhost.run y cloudflared, disponible en español e inglés.**
 
@@ -129,7 +129,7 @@ python3 dox_en.py
 # Version
 • v2.6
 
-# New functions
+# Update
 
 **• An update has been added to the integrated IPlogger for URL generation in localhost.run and cloudflared, available in Spanish and English.**
 
