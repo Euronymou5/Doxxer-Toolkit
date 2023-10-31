@@ -149,4 +149,11 @@ python3 dox_en.py
 <img src="https://media.discordapp.net/attachments/995599976463859713/1169040816312954951/image.png">
 
 # Contacto / Contact
-• Discord: Euronymou5#3155
+
+*Preguntas, dudas, ideas:*
+
+**• Discord: euronymou5**
+
+*Bugs, Problemas de instalacion*:
+
+• **[Reportar en los GitHub Issues](https://github.com/Euronymou5/Doxxer-Toolkit/issues)**
