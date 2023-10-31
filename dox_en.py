@@ -936,6 +936,19 @@ def menu():
       qrcodigo()
     elif elejir == 12:
        os.system("python3 modules/emails_en.py")
+    elif elejir == 98:
+        version = requests.get('https://raw.githubusercontent.com/Euronymou5/Doxxer-Toolkit/main/version.txt')
+        if version.status_code == 200:
+            c = version.text
+            ola = c.strip()
+            if Version == ola:
+                print(f'\n{Colores.verde}[~] No versions available.')
+                m = input(f'\n{Colores.red}[~] Press enter to continue...')
+                menu()
+            else:
+                print(f'\n{Colores.verde}[~] A new version is available: {ola}')
+                m = input(f'\n{Colores.red}[~] Press enter to continue...')
+                menu()
     elif elejir == 99:
       exit()
     else:
