@@ -909,6 +909,8 @@ def menu():
     [10] Link shorteners
     [11] Generate qr code
     [12] OSINT Email (BETA)
+
+    [98] Update checker
     [99] Exit
     ''')
     elejir = int(input('\n>> '))
