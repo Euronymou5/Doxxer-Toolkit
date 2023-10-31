@@ -61,9 +61,15 @@ python3 dox_en.py
 
 # Nuevas funciones
 
-**• Mejorado osint a email utilizando dorking y socialscan / Improved osint to email using dorking and socialscan**
+**• Se ha agregado una actualizacion al IPlogger integrado para la generación de URLs en localhost.run y cloudflared, disponible en español e inglés.**
 
-**• Mejorado busqueda de usuario de Doxxer-Toolkit / Improved Doxxer-Toolkit user search**
+**• IP-Tracker actualizado a codigo abierto para español y ingles.**
+
+**• Añadido Etemp-mail y tempmail.email a correos electronicos anonimos.**
+
+**• Removido send anonymous sms debido a que ya no funcionaba.**
+
+**• Añadido pagina awesome osint a paginas de osint.**
 
 -----------------------
 
@@ -123,9 +129,15 @@ python3 dox_en.py
 
 # New functions
 
-**• Improved osint to email using dorking and socialscan**
+**• An update has been added to the integrated IPlogger for URL generation in localhost.run and cloudflared, available in Spanish and English.**
 
-**• Improved Doxxer-Toolkit user search**
+**• IP-Tracker updated to open source for Spanish and English.**
+
+**• Added Etemp-mail and tempmail.email to anonymous emails.**
+
+**• Removed sending anonymous sms because it no longer worked.**
+
+**• Added awesome osint page to osint pages.**
 
 ----------------------------
 
