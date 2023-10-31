@@ -146,7 +146,7 @@ python3 dox_en.py
 ----------------------------
 
 # Imagenes / Images
-<img src="https://media.discordapp.net/attachments/995599976463859713/1008188220678361088/doxxer_menu.png?width=590&height=431">
+<img src="https://media.discordapp.net/attachments/995599976463859713/1169040816312954951/image.png">
 
 # Contacto / Contact
 • Discord: Euronymou5#3155
