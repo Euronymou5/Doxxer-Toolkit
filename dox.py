@@ -958,7 +958,7 @@ def menu():
     elif elejir == 12:
        os.system("python3 modules/emails.py")
     elif elejir == 98:
-        version = requests.get('https://github.com/Euronymou5/FuckYou/raw/main/version.txt')
+        version = requests.get('https://raw.githubusercontent.com/Euronymou5/Doxxer-Toolkit/main/version.txt')
         if version.status_code == 200:
             c = version.text
             ola = c.strip()
