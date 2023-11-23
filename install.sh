@@ -12,11 +12,15 @@ function install() {
    echo -e "\nInstalando php..."
    apt install php -y
 
-   echo -e "\nInstalando pip3..."
-
+   which pip3 > /dev/null 2>&1
+   if [ "$?" -eq "0" ]; then
+   echo -e "\npip3 ya esta instalado."
+   else
+   echo -e "\nInstalando pip3...."
    wget https://bootstrap.pypa.io/get-pip.py
    python3 get-pip.py
-   rm get-pip.py
+   rm -rf get-pip.py
+   fi
 
    echo -e "\nInstalando requerimientos..."
    pip3 install -r requirements.txt
