@@ -4,7 +4,7 @@ function install() {
    clear
 
    echo -e "\nInstalando paquetes básicos..."
-   sudo pacman -S --noconfirm python3 php wget
+   pacman -S --noconfirm python3 php wget
 
    echo -e "\nInstalando requerimientos..."
    pip3 install -r requirements.txt
