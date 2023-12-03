@@ -145,7 +145,7 @@ python3 dox_en.py
 ----------------------------
 
 # Imagenes / Images
-<img src="https://media.discordapp.net/attachments/995599976463859713/1169040816312954951/image.png">
+<img src="https://media.discordapp.net/attachments/995599976463859713/1180718283171835996/image.png">
 
 # Contacto / Contact
 
