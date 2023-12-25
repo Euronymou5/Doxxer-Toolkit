@@ -87,7 +87,7 @@ python3 dox_en.py
 ## English repo:
 
 # Doxxer-Toolkit
-**• A tool that integrates the compilation of various tools, techniques and sources of information, making it easier to carry out a doxxeo.**
+**• A tool that integrates the compilation of various tools, techniques and sources of information, making it easier to carry out a dox.**
 
 **• Everything necessary that a doxxer should always have on hand.**
 
