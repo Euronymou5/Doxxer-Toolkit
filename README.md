@@ -18,7 +18,7 @@ resultantes.*
 - [Instalacion (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#instalacion)
 - [Sistemas operativos compatibles (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#testeado-en)
 - [Nuevas funciones (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#nuevas-funciones)
-- [English repo](https://github.com/Euronymou5/Doxxer-Toolkit#english-repo)
+- [English repo](https://github.com/Euronymou5/Doxxer-Toolkit?tab=readme-ov-file#doxxer-toolkit-1)
 - [Installation](https://github.com/Euronymou5/Doxxer-Toolkit#installation)
 - [Supported operating systems](https://github.com/Euronymou5/Doxxer-Toolkit#tested-in)
 - [New fuctions](https://github.com/Euronymou5/Doxxer-Toolkit#new-functions)
@@ -83,8 +83,6 @@ python3 dox_en.py
 **• Se han arreglado algunos bugs y errores.**
 
 -----------------------
-
-## English repo:
 
 # Doxxer-Toolkit
 **• A tool that integrates the compilation of various tools, techniques and sources of information, making it easier to carry out a dox.**
