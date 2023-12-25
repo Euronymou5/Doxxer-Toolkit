@@ -1,9 +1,18 @@
 # Doxxer-Toolkit
-**• Todo lo necesario que un doxxer debe de tener siempre a mano**
+**• Una herramienta que integra la recopilación de diversas herramientas, técnicas y fuentes de información, facilitando el realizar un doxxeo.**
 
-**• No me hago responsable del mal uso de esta herramienta es bajo su propia responsabilidad**
+**• Todo lo necesario, que un doxxer debe de tener siempre a mano.**
 
-**• (Gracias por el apoyo a la herramienta, lo que comenzo como un proyecto random ahora se convirtio en un proyecto muy grande, si me quieres apoyar por favor dale una estrella al repositorio!)**
+## ¡DESCARGO DE RESPONSABILIDAD!
+*No me responsabilizo por el mal uso de esta
+herramienta. Esta herramienta se proporciona con
+fines educativos e informativos, con el objetivo de
+concienciar sobre cómo los atacantes pueden obtener
+fácilmente información de un número de teléfono, correo
+electrónico, etc. Cualquier uso indebido de esta
+herramienta queda bajo la responsabilidad del usuario,
+y no me hago responsable de las consecuencias
+resultantes.*
 
 ## Repository review:
 - [Instalacion (Español / Spanish)](https://github.com/Euronymou5/Doxxer-Toolkit#instalacion)
@@ -78,11 +87,19 @@ python3 dox_en.py
 ## English repo:
 
 # Doxxer-Toolkit
-**• Everything necessary that a doxxer should always have at hand**
+**• A tool that integrates the compilation of various tools, techniques and sources of information, making it easier to carry out a doxxeo.**
 
-**• I am not responsible for the misuse of this tool is at your own risk**
+**• Everything necessary that a doxxer should always have on hand.**
 
-**• (Thank you for supporting the tool, what started as a random project has now become a very large project, if you want to support me please give the repository a star!)**
+## DISCLAIMER!
+*I am not responsible for misuse of this
+tool. This tool is provided with
+educational and informative purposes, with the aim of
+raise awareness about how attackers can obtain
+easily information on a phone number, email, etc. Any improper use of this
+tool is under the responsibility of the user,
+and I am not responsible for the consequences
+resulting.*
 
 # Installation
 
