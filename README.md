@@ -160,7 +160,8 @@ python3 dox_en.py
 ----------------------------
 
 # Imagenes / Images
-<img src="https://media.discordapp.net/attachments/995599976463859713/1180718283171835996/image.png">
+![image](https://github.com/Euronymou5/Doxxer-Toolkit/assets/85043356/6b7442e3-63ce-4c59-b190-d11234cba98e)
+
 
 # Contacto / Contact
 
