@@ -3,6 +3,10 @@
 
 **• Todo lo necesario, que un doxxer debe de tener siempre a mano.**
 
+### Estado de Doxxer-Toolkit
+
+> Actualmente ya no sacaré actualizaciones de Doxxer-Toolkit. Este proyecto empezó como una idea algo random que creé a los 13 años, y por eso, si sabes de programación y revisas el código, verás un desastre. Ahora tengo 18 años y me dedico a otras cosas, además de haberme distanciado de todo esto, así que ya no pienso invertirle el tiempo que antes le dedicaba a su desarrollo. Aun así, agradezco mucho el apoyo que recibió y todas las estrellas que ganó el repositorio. Si quieren contactarme de manera más directa pueden hacerlo por Discord (aunque a veces se me pasa aceptar solicitudes) o en X; ProtonMail lo uso para otros asuntos, así que no respondo correos con dudas que me envían allí.
+
 ## ¡DESCARGO DE RESPONSABILIDAD!
 *No me responsabilizo por el mal uso de esta
 herramienta. Esta herramienta se proporciona con
@@ -88,6 +92,10 @@ python3 dox_en.py
 **• A tool that integrates the compilation of various tools, techniques and sources of information, making it easier to carry out a dox.**
 
 **• Everything necessary that a doxxer should always have on hand.**
+
+### Doxxer-Toolkit status
+
+> I will no longer be releasing updates for Doxxer-Toolkit. This project started as a somewhat random idea I came up with when I was 13 years old, and because of that, if you know programming and look through the code, you'll see a mess. I'm now 18 years old and focused on other things, and I've also distanced myself from all of this, so I no longer plan to invest the time in its development that I used to. Even so, I'm very grateful for the support it received and for all the stars the repository earned. If you'd like to contact me more directly, you can do so through Discord (although I sometimes forget to accept friend requests) or on X; I use ProtonMail for other matters, so I don't respond to emails with questions that are sent to me there.
 
 ## DISCLAIMER!
 *I am not responsible for misuse of this
