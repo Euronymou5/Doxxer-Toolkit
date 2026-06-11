@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+apt install git -y# -*- coding: utf-8 -*-
 
 # Doxxer-Toolkit by Euronymou5
 # https://twitter.com/Euronymou51
